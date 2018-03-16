@@ -13,7 +13,7 @@ class Home extends Component {
 	  };
 	}
 	componentDidMount() {
-		fetch("https://api.football-data.org/v1/competitions/?season=2012",
+		fetch("https://api.football-data.org/v1/competitions/?season=2017",
 		{
 			method: 'get',
 			headers: {
@@ -41,7 +41,7 @@ class Home extends Component {
 		const {error,isLoaded, items} = this.state;
 		if (error) {
 			console.log(error.message);
-			return <div>+"rror"+</div>;
+			return <div>{error.message}</div>;
 		}
 		else if (!isLoaded) {
       return <div>Loading...</div>;
