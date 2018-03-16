@@ -67,7 +67,7 @@ class LeagueTable extends Component{
 		const id = this.props.match.params.id;
 
 		const fixture = this.props.match.params.fixture == null ? this.state.item.matchday : this.props.match.params.fixture;
-			fetch("http://api.football-data.org/v1/competitions/"+id+"/fixtures?matchday="+fixture,
+			fetch("https://api.football-data.org/v1/competitions/"+id+"/fixtures?matchday="+fixture,
 		{
 			method: 'get',
 			headers: {
