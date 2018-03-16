@@ -13,7 +13,7 @@ class Home extends Component {
 	  };
 	}
 	componentDidMount() {
-		fetch("http://api.football-data.org/v1/competitions/?season=2017",
+		fetch("https://api.football-data.org/v1/competitions/?season=2017",
 		{
 			method: 'get',
 			headers: {

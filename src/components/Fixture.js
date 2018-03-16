@@ -22,7 +22,7 @@ class Fixture extends Component {
 		
 		const id = this.props.match.params.id;
 		const fixture = parseInt(this.props.match.params.fixture)+parseInt(1);
-			fetch("http://api.football-data.org/v1/competitions/"+id+"/fixtures?matchday="+fixture,
+			fetch("https://api.football-data.org/v1/competitions/"+id+"/fixtures?matchday="+fixture,
 		{
 			method: 'get',
 			headers: {

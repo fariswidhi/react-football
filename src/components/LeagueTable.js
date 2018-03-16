@@ -27,7 +27,7 @@ class LeagueTable extends Component{
 
 		const id = this.props.match.params.id;
 
-		fetch("http://api.football-data.org/v1/competitions/"+id+"/leagueTable",
+		fetch("https://api.football-data.org/v1/competitions/"+id+"/leagueTable",
 		{
 			method: 'get',
 			headers: {
