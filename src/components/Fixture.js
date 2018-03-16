@@ -87,8 +87,8 @@ class Fixture extends Component {
 			<ul className="list-group" style={{textAlign:"left"}}>
 			<li className="list-group-item">
 		<center>Fixture {fixture}</center>
-		<Link  className="btn btn-primary btn-sm float-left" to={'/standings/'+id+'/'+parseInt(fixture-1)}>Prev</Link>	
-		<Link  className="btn btn-primary btn-sm float-right" to={'/standings/'+id+'/'+next}>Next</Link>	
+		<Link  className="btn btn-primary btn-sm float-left" to={'/'+id+'/'+parseInt(fixture-1)}>Prev</Link>	
+		<Link  className="btn btn-primary btn-sm float-right" to={'/'+id+'/'+next}>Next</Link>	
 </li>
 				{fixtures.map((item,i) => (
 					<li key={i} className="list-group-item">
