@@ -41,7 +41,7 @@ class Home extends Component {
 		const {error,isLoaded, items} = this.state;
 		if (error) {
 			console.log(error.message);
-			return <div>{error.message}</div>;
+			return <div>+"rror"+</div>;
 		}
 		else if (!isLoaded) {
       return <div>Loading...</div>;
